@@ -1,7 +1,8 @@
+import Header from "@/components/Header"
+import HomeButton from "@/components/HomeButton"
+import Pathname from "@/components/Pathname"
 import Link from "next/link"
-import Pathname from "../components/Pathname"
-import Header from "../components/header"
-import HomeButton from "../components/HomeButton"
+
 
 export const metadata = {
     title: 'About'

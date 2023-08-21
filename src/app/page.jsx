@@ -1,6 +1,6 @@
+import Pathname from "@/components/Pathname"
 import Link from "next/link"
-import Header from "./components/header"
-import Pathname from "./components/Pathname"
+
 
 export const metadata = {
   title: 'Home Page',
