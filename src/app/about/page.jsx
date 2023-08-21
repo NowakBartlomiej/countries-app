@@ -10,16 +10,9 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div>
-        <Pathname />
-        
-        <Header />
+    <section>
         <h1>About Page</h1>
-
-        <Link href='/'>Home Page</Link>
-
-        <HomeButton />
-    </div>
+    </section>
   )
 }
 

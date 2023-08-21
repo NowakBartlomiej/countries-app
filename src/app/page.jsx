@@ -8,15 +8,9 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div>
-      <Pathname />
-
+    <section>
       <h1>Home Page</h1>
-
-      <Link href='/about'>About Page</Link>
-      <br />
-      <Link href='/countries'>Countries</Link>
-    </div>
+    </section>
   )
 }
 

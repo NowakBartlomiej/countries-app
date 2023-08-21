@@ -1,0 +1,21 @@
+.header {
+    font-size: 2.3rem;
+    margin-bottom: .5rem;
+}
+
+.list {
+   font-size: 1.5rem;
+   display: flex;
+   flex-direction: column;
+   gap: .5rem;
+}
+
+
+.link {
+    text-decoration: none;
+    color: #131313;
+}
+
+.link:hover {
+    color: #7c7c7c;
+}

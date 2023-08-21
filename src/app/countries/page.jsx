@@ -1,4 +1,7 @@
 import React from 'react'
+import styles from '../../styles/countries.module.css'
+
+import Link from 'next/link'
 
 export const metadata = {
     title: 'Countries List'
@@ -6,9 +9,17 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div>
-        <h1>Countries List</h1>
-    </div>
+    <section>
+        <h1 className={styles.header}>Countries List</h1>
+
+        <div className={styles.list}>
+          <Link href={`/countries/Poland`} className={styles.link}>Poland</Link>
+
+          <Link href={`/countries/France`} className={styles.link}>France</Link>
+
+          <Link href={`/countries/Belgium`} className={styles.link}>Belgium</Link>
+        </div>
+    </section>
   )
 }
 
