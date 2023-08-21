@@ -1,3 +1,7 @@
+import Link from "next/link"
+import Header from "./components/header"
+import Pathname from "./components/Pathname"
+
 export const metadata = {
   title: 'Home Page',
 }
@@ -5,7 +9,11 @@ export const metadata = {
 const page = () => {
   return (
     <div>
+      <Pathname />
+
       <h1>Home Page</h1>
+
+      <Link href='/about'>About Page</Link>
     </div>
   )
 }
