@@ -4,7 +4,13 @@ import styles from '../../styles/countries.module.css'
 import Link from 'next/link'
 
 export const metadata = {
-    title: 'Countries List'
+    title: 'Countries List',
+    description: 'This is the country list page',
+    category: 'education',
+    keywords: ['geography', 'countries', 'country', 'map', 'education'],
+    icons: {
+      icon: 'logo.png',
+    }
 }
 
 const page = () => {

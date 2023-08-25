@@ -5,7 +5,13 @@ import styles from '../../../styles/country.module.css'
 import { useRouter } from 'next/navigation'
 
 export const metadata = {
-    title: 'Countries'
+  title: 'Countries List',
+  description: 'This is the country page',
+  category: 'education',
+  keywords: ['geography', 'countries', 'country', 'map', 'education'],
+  icons: {
+    icon: 'logo.png',
+  }
 }
 
 const page = ({params}) => {

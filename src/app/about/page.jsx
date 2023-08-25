@@ -1,5 +1,11 @@
 export const metadata = {
-    title: 'About'
+    title: 'About',
+    description: 'This is the country list page',
+    category: 'education',
+    keywords: ['geography', 'countries', 'country', 'map', 'education'],
+    icons: {
+      icon: 'logo.png',
+    }
 }
 
 const page = () => {
