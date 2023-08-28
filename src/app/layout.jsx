@@ -10,8 +10,15 @@ const Layout = ({ children }) => {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header/>
-        {children}
+        <header>
+          <Header/>
+        </header>
+        
+        <main>
+          {children}
+        </main>
+
+        <footer></footer>
       </body>
     </html>
   )
