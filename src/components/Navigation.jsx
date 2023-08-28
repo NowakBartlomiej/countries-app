@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-import styles from "../styles/navigation.module.css";
+import styles from "@styles/navigation.module.css";
 import { usePathname } from 'next/navigation';
 
 const Navigation = () => {
