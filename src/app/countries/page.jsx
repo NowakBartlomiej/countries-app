@@ -9,7 +9,7 @@ export const metadata = {
     category: 'education',
     keywords: ['geography', 'countries', 'country', 'map', 'education'],
     icons: {
-      icon: 'logo.png',
+      icon: 'logo.svg',
     }
 }
 
