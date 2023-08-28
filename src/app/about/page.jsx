@@ -1,3 +1,5 @@
+import styles from '../../styles/about.module.css'
+
 export const metadata = {
     title: 'About',
     description: 'This is the country list page',
@@ -11,7 +13,7 @@ export const metadata = {
 const Page = () => {
   return (
     <section>
-        <h1>About Page</h1>
+        <p className={styles.text}>About Page</p>
     </section>
   )
 }
