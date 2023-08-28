@@ -5,7 +5,7 @@ import Navigation from "@/components/Navigation";
 
 const inter = Inter({subsets: ['latin']})
 
-const RootLayout = ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -16,4 +16,4 @@ const RootLayout = ({ children }) => {
   )
 }
 
-export default RootLayout
+export default Layout
