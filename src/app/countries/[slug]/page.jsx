@@ -14,7 +14,7 @@ export const metadata = {
   }
 }
 
-const page = ({params}) => {
+const Page = ({params}) => {
   const router = useRouter();
   
   return (
@@ -26,4 +26,4 @@ const page = ({params}) => {
   )
 }
 
-export default page
+export default Page

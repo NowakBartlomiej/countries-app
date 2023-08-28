@@ -13,7 +13,7 @@ export const metadata = {
     }
 }
 
-const page = () => {
+const Page = () => {
   return (
     <section>
         <h1 className={styles.header}>Countries List</h1>
@@ -29,4 +29,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
