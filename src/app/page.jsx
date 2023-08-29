@@ -1,3 +1,5 @@
+import variables from './variables.module.scss'
+
 export const metadata = {
   title: 'Home Page',
   description: 'This is the home page',
@@ -11,7 +13,7 @@ export const metadata = {
 const Page = () => {
   return (
     <section>
-      <h1>Home Page</h1>
+      <h1 style={{ color: variables.primaryColor }}>Home Page</h1>
     </section>
   )
 }
