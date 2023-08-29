@@ -6,10 +6,6 @@ const middleware = (request) => {
 
     const header = requestHeaders.get('x-url')
 
-    console.log()
-    console.log(header)
-    console.log()
-
     return NextResponse.next({
         request: {
           headers: requestHeaders,
