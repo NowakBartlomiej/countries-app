@@ -20,7 +20,7 @@ const Page = ({ params }) => {
   return (
     <section>
       <p className={styles.text}>
-        <span className={styles.span}>Country: </span>
+        <span className={styles.span}>Country:</span>
         {params.slug}
       </p>
 
