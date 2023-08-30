@@ -1,4 +1,4 @@
-import variables from './variables.module.scss'
+import variables from '@styles/variables.module.scss'
 
 export const metadata = {
   title: 'Home Page',
