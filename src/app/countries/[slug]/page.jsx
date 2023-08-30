@@ -23,7 +23,6 @@ const Page = ({ params }) => {
         <span className={styles.span}>Country:</span>
         {params.slug}
       </p>
-
       <div onClick={() => router.back()} className={styles.button}>
         Go back
       </div>
