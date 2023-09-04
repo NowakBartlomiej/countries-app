@@ -1,0 +1,25 @@
+.navigation {
+    padding: 2rem 1.5rem;
+    background: #eee;
+    color: black;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.link {
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+.link:hover {
+    color: #7c7c7c;
+}
+
+.activeLink {
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: red;
+}
