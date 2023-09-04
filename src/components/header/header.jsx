@@ -10,10 +10,8 @@ const Header = () => {
   
   return (
     <header className={styles.navigation}>
-          <Link className={currentRoute === '/' ? styles.activeLink : styles.link} href="/">Home</Link>
-        
+          <Link className={currentRoute === '/' ? styles.activeLink : styles.link} href="/">Home</Link> 
           <Link className={currentRoute === '/about' ? styles.activeLink : styles.link} href="/about">About</Link>
-        
           <Link className={currentRoute === '/countries' ? styles.activeLink : styles.link} href="/countries">Countries</Link>
     </header>
   );
