@@ -4,7 +4,13 @@ import useCountries from '@/app/libs/useCountries'
 import React from 'react'
 
 const Countries = () => {
-  const {data, isLoading} = useCountries();
+  const {data, isLoading} = useCountries({
+    name: true,
+    captital: false,
+    currencies: false,
+  });
+
+  console.log(data);
 
   return (
     <>

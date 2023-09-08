@@ -7,7 +7,7 @@ const useCountries = (options) => {
   return useQuery({
     queryKey: ['countries'],
     queryFn: async () => {
-      return fetchData('/all')
+      return fetchData('/all', options)
     },
     ...options
   })
