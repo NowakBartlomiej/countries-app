@@ -6,7 +6,7 @@ import fetchData from '../app/api/fetchData'
 const useCountries = (options) => {
   return useQuery({
     queryKey: ['countries'],
-    queryFn: async () => {
+    queryFn: () => {
       return fetchData('/all', options)
     },
     ...options
