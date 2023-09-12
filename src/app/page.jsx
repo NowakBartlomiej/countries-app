@@ -1,5 +1,5 @@
 import getQueryClient from "../queryClient/components/getQueryClient"
-import fetchData from "./libs/fetchData"
+import fetchData from "./api/fetchData"
 import { Hydrate, dehydrate } from "@tanstack/react-query"
 import Countries from "@/components/countries/countries"
 

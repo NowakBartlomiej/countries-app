@@ -1,7 +1,7 @@
 'use client'
 
 import { useQuery} from '@tanstack/react-query'
-import fetchData from './fetchData'
+import fetchData from '../api/fetchData'
 
 const useCountries = (options) => {
   return useQuery({
