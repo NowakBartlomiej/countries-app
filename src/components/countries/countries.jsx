@@ -1,10 +1,10 @@
-'use client'
+"use client";
 
-import useCountries from '@/hooks/useCountries'
-import React from 'react'
+import useCountries from "@/hooks/useCountries";
+import React from "react";
 
 const Countries = () => {
-  const {data, isLoading} = useCountries({
+  const { data } = useCountries({
     name: true,
     captital: false,
     currencies: false,
@@ -12,16 +12,13 @@ const Countries = () => {
 
   return (
     <>
-        {isLoading 
-        ? <h2>Loading...</h2> 
-        : (
-          <div>{data.map((country) => (
-            <h1 key={country.name.common}>{country.name.common}</h1>
-          ))}</div>
-        )
-      }
+      <div>
+        {data.map((country) => (
+          <h1 key={country.name.common}>{country.name.common}</h1>
+        ))}
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Countries
+export default Countries;
