@@ -1,6 +1,3 @@
-import getQueryClient from "../queryClient/components/getQueryClient"
-import fetchData from "./api/fetchData"
-import { Hydrate, dehydrate } from "@tanstack/react-query"
 import Countries from "@/components/countries/countries"
 
 
@@ -14,16 +11,10 @@ export const metadata = {
   }
 }
 
-const Page = async () => {
-  const queryClient = getQueryClient()
-  await queryClient.prefetchQuery(['countries'], () => fetchData('/all'))
-  const dehydratedState = dehydrate(queryClient);
-  
+const Page = () => {
   return (
     <section>
-      <Hydrate state={dehydratedState}>
-        <Countries />
-      </Hydrate>
+      <Countries />
     </section>
   )
 }
