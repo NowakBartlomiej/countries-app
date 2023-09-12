@@ -13,4 +13,8 @@ const useCountries = (options) => {
   })
 }
 
+export const getUseQueryKey = () => {
+  return ['countries']
+}
+
 export default useCountries
