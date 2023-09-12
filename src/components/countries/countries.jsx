@@ -10,8 +10,6 @@ const Countries = () => {
     currencies: false,
   });
 
-  console.log(data);
-
   return (
     <>
         {isLoading 
