@@ -1,6 +1,6 @@
 'use client'
 
-import useCountries from '@/app/libs/useCountries'
+import useCountries from '@/hooks/useCountries'
 import React from 'react'
 
 const Countries = () => {
