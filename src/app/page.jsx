@@ -1,4 +1,4 @@
-import getQueryClient from "./getQueryClient"
+import getQueryClient from "../queryClient/components/getQueryClient"
 import fetchData from "./libs/fetchData"
 import { Hydrate, dehydrate } from "@tanstack/react-query"
 import Countries from "@/components/countries/countries"
