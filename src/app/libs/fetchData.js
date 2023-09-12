@@ -9,7 +9,6 @@ const fetchData = async (endpoint, options = {
         .catch((error) => {
             throw new Error(error)  
         })
-    // console.log(result)
     return result.data
 }
 
