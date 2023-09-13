@@ -5,9 +5,7 @@ import React from "react";
 
 const Countries = () => {
   const { data } = useCountries({
-    name: true,
-    captital: false,
-    currencies: false,
+    filters: ['name', 'capital']
   });
 
   return (

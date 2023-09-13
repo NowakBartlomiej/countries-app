@@ -1,11 +1,9 @@
 import { countriesAxios } from "@/countriesAxios"
 
-const fetchData = async (endpoint, options = {
-    name: false,
-    captital: false,
-    currencies: false,
-  }) => {
-    const result = await countriesAxios.get(`${endpoint}?fields=${options.name ? 'name,' : ''}${options.captital ? 'captital,' : ''}${options.currencies ? 'currencies,' : ''}`)
+const fetchData = async (endpoint, options = {filters: ''}) => {
+    const filtersValues = String(options.filters)
+
+    const result = await countriesAxios.get(`${endpoint}`, {params: { fields: filtersValues}})
         .catch((error) => {
             throw new Error(error)  
         })
