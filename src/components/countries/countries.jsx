@@ -10,11 +10,13 @@ const Countries = () => {
 
   return (
     <>
-      <div>
+      <ul>
         {data.map((country) => (
-          <h1 key={country.name.common}>{country.name.common}</h1>
+          <li key={country.name.common}>
+            <h2>{country.name.common}</h2>
+          </li>
         ))}
-      </div>
+      </ul>
     </>
   );
 };
