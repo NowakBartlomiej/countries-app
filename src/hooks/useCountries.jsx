@@ -13,7 +13,7 @@ const useCountries = (options) => {
   })
 }
 
-export const getUseQueryKey = () => {
+export const getUseCountriesQueryKey  = () => {
   return ['countries']
 }
 
