@@ -1,9 +1,7 @@
 import { countriesAxios } from "@/countriesAxios"
 
-const fetchData = async (endpoint, options = {filters}) => {
-    const filtersValues = String(options.filters)
-    
-    const result = await countriesAxios.get(`${endpoint}`, {params: { fields: filtersValues}})
+const fetchData = async (endpoint, options) => {
+    const result = await countriesAxios.get(endpoint, {params: { fields: options.filters.join(',')}})
         .catch((error) => {
             throw new Error(error)  
         })
