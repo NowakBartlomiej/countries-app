@@ -8,9 +8,7 @@ export const getUseCountriesQueryKey  = () => {
 const useCountries = (options) => {
   return useQuery({
     queryKey: getUseCountriesQueryKey(),
-    queryFn: () => {
-      return fetchData('/all', {filters: options?.filters ?? []})
-    },
+    queryFn: fetchData('/all', {filters: options?.filters ?? []}),
     ...options
   })
 }
