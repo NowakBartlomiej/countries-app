@@ -1,3 +1,6 @@
+import Countries from "@/components/countries/countries"
+
+
 export const metadata = {
   title: 'Home Page',
   description: 'This is the home page',
@@ -11,7 +14,7 @@ export const metadata = {
 const Page = () => {
   return (
     <section>
-      <h1>Home Page</h1>
+      <Countries />
     </section>
   )
 }
