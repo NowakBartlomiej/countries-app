@@ -1,11 +1,13 @@
-'use client'
-
 import { useQuery} from '@tanstack/react-query'
 import fetchData from '../app/api/fetchData'
 
+export const getUseCountriesQueryKey  = () => {
+  return ['countries']
+}
+
 const useCountries = (options) => {
   return useQuery({
-    queryKey: ['countries'],
+    queryKey: getUseCountriesQueryKey(),
     queryFn: () => {
       return fetchData('/all', {filters: options?.filters ?? []})
     },
@@ -13,8 +15,6 @@ const useCountries = (options) => {
   })
 }
 
-export const getUseCountriesQueryKey  = () => {
-  return ['countries']
-}
+
 
 export default useCountries

@@ -8,11 +8,13 @@ import getQueryClient from '@/queryClient/components/getQueryClient';
 import fetchData from './api/fetchData';
 import { Hydrate, dehydrate } from "@tanstack/react-query"
 
+import {getUseCountriesQueryKey} from '@/hooks/useCountries'
+
 const inter = Inter({subsets: ['latin']})
 
 const Layout = async ({ children }) => {
   const queryClient = getQueryClient()
-  await queryClient.prefetchQuery(['countries'], () => fetchData('/all', {filters: []}))
+  await queryClient.prefetchQuery(getUseCountriesQueryKey(), () => fetchData('/all', {filters: []}))
   const dehydratedState = dehydrate(queryClient);
  
  
