@@ -1,5 +1,4 @@
-import Countries from "@/components/countries/countries"
-
+import Countries from '@/components/countries/countries';
 
 export const metadata = {
   title: 'Home Page',
@@ -8,15 +7,15 @@ export const metadata = {
   keywords: ['geography', 'countries', 'country', 'map', 'education'],
   icons: {
     icon: 'logo.svg',
-  }
-}
+  },
+};
 
 const Page = () => {
   return (
     <section>
       <Countries />
     </section>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;

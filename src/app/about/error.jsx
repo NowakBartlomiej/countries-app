@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 const Error = ({ error, reset }) => {
   return (
@@ -7,6 +7,6 @@ const Error = ({ error, reset }) => {
       <button onClick={() => reset()}>Try again</button>
     </div>
   );
-}
+};
 
-export default Error
+export default Error;

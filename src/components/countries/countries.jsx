@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import useCountries from "@/hooks/useCountries";
-import React from "react";
+import useCountries from '@/hooks/useCountries';
+import React from 'react';
 
 const Countries = () => {
   const { data } = useCountries({
-    filters: ['name', 'capital']
+    filters: ['name', 'capital'],
   });
 
   return (
