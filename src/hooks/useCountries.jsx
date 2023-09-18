@@ -1,18 +1,16 @@
-import { useQuery} from '@tanstack/react-query'
-import fetchData from '../app/api/fetchData'
+import { useQuery } from '@tanstack/react-query';
+import fetchData from '../app/api/fetchData';
 
-export const getUseCountriesQueryKey  = () => {
-  return ['countries']
-}
+export const getUseCountriesQueryKey = () => {
+  return ['countries'];
+};
 
 const useCountries = (options) => {
   return useQuery({
     queryKey: getUseCountriesQueryKey(),
-    queryFn: fetchData('/all', {filters: options?.filters ?? []}),
-    ...options
-  })
-}
+    queryFn: fetchData('/all', { filters: options?.filters ?? [] }),
+    ...options,
+  });
+};
 
-
-
-export default useCountries
+export default useCountries;
