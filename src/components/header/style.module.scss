@@ -1,25 +1,27 @@
-.navigation {
-  padding: 2rem 1.5rem;
-  background: #eee;
-  color: black;
+.header {
+  background: #fff;
   display: flex;
-  gap: 1.5rem;
+  align-items: center;
+  gap: 1.6rem;
+  padding: .65rem;
+  border-bottom: 1px solid #DBDBDB;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
 }
 
 .link {
-  font-size: 1.2rem;
   text-decoration: none;
+  color: #504F58;
   font-weight: 500;
-  color: black;
-}
-
-.link:hover {
-  color: #7c7c7c;
+  font-size: 18px;
 }
 
 .activeLink {
-  font-size: 1.2rem;
-  text-decoration: none;
-  font-weight: 500;
-  color: red;
+  @extend .link;
+  color: #181818;
+  font-weight: 600;
 }
