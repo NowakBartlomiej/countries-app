@@ -1,11 +1,16 @@
-'use client';
-
 import styles from './style.module.scss';
 
-import { useRouter } from 'next/navigation';
+export const metadata = {
+  title: 'Countries List',
+  description: 'This is the country page',
+  category: 'education',
+  keywords: ['geography', 'countries', 'country', 'map', 'education'],
+  icons: {
+    icon: 'logo.svg',
+  },
+};
 
 const Page = ({ params }) => {
-  const router = useRouter();
 
   return (
     <section>
@@ -13,9 +18,6 @@ const Page = ({ params }) => {
         <span className={styles.span}>Country:</span>
         {params.slug}
       </p>
-      <div onClick={() => router.back()} className={styles.button}>
-        Go back
-      </div>
     </section>
   );
 };
