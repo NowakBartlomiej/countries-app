@@ -1,8 +1,4 @@
-'use client';
-
 import styles from './style.module.scss';
-
-import { useRouter } from 'next/navigation';
 
 export const metadata = {
   title: 'Countries List',
@@ -15,7 +11,6 @@ export const metadata = {
 };
 
 const Page = ({ params }) => {
-  const router = useRouter();
 
   return (
     <section>
@@ -23,9 +18,6 @@ const Page = ({ params }) => {
         <span className={styles.span}>Country:</span>
         {params.slug}
       </p>
-      <div onClick={() => router.back()} className={styles.button}>
-        Go back
-      </div>
     </section>
   );
 };
