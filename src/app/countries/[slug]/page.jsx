@@ -4,16 +4,6 @@ import styles from './style.module.scss';
 
 import { useRouter } from 'next/navigation';
 
-export const metadata = {
-  title: 'Countries List',
-  description: 'This is the country page',
-  category: 'education',
-  keywords: ['geography', 'countries', 'country', 'map', 'education'],
-  icons: {
-    icon: 'logo.svg',
-  },
-};
-
 const Page = ({ params }) => {
   const router = useRouter();
 
