@@ -1,0 +1,50 @@
+.options {
+    display: flex;
+    align-items: center;
+    padding: 1.9rem 4.3rem;
+    justify-content: space-between;
+}
+
+.select {
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 8px;
+    border: 1px solid #646367;
+    color: #646367;
+    background: #fff;
+    padding: 7px;
+}
+
+.continents {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+}
+
+.continent {
+    font-size: 16px;
+    font-weight: 400;
+    color: #646367;
+    cursor: pointer;
+}
+
+.activeContinent {
+    @extend .continent;
+    color: #181818;
+    background: #D1D1D5;
+    border-radius: 9px;
+    padding: .5rem .9rem;
+    font-weight: 500;
+} 
+
+.input {
+    border-radius: 9px;
+    border: 1px solid #646367;
+    width: 11rem;
+    padding: 7px 7px 7px 40px;
+    background: #fff url("../../../public/search.svg") no-repeat 13px;
+    color: #86858A;
+    font-size: 16px;
+}
+
+
