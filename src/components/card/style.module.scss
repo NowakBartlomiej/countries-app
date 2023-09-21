@@ -1,0 +1,61 @@
+.card {
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 1px 7px 17px 1px rgba(0, 0, 0, 0.21);
+    display: grid;
+    grid-template-rows: 1fr .5fr;
+}
+
+.imageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: transparent;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 1px 7px 17px 1px rgba(0, 0, 0, 0.21);
+}
+
+.info {
+    padding: 1rem;
+}
+
+.country {
+    color: #0C0C0E;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+
+.capital {
+    color: #394244;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin-top: .37rem;
+}
+
+.continentWrapper {
+    margin-top: 1.34rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.continent {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    background: #203E5F;
+    padding: 1rem .7rem;
+    border-radius: 17px;
+
+}

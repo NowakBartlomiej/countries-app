@@ -24,7 +24,7 @@ export const continents = [
         isActive: false,
     },
     {
-        name: 'Antarctica',
+        name: 'Antarctic',
         isActive: false,
     },
     {

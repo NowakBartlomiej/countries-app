@@ -1,23 +1,26 @@
 'use client';
 
 import useCountries from '@/hooks/useCountries';
-import React from 'react';
+import Card from '../card/card';
+import styles from './styles.module.scss'
 
 const Countries = () => {
   const { data } = useCountries({
-    filters: ['name', 'capital'],
+    filters: ['name', 'capital', 'region', 'flags'],
   });
 
   return (
-    <>
-      <ul>
-        {data.map((country) => (
-          <li key={country.name.common}>
-            <h2>{country.name.common}</h2>
-          </li>
-        ))}
-      </ul>
-    </>
+    <main className={styles.grid}>
+      {data.map((country) => (
+        <Card 
+          key={country.name.common} 
+          image={country.flags.svg}
+          country={country.name.common} 
+          capital={country.capital}
+          continent={country.region}
+        />
+      ))}
+    </main>
   );
 };
 
