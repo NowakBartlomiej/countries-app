@@ -28,7 +28,7 @@ export const continents = [
         isActive: false,
     },
     {
-        name: 'Australia',
+        name: 'Oceania',
         isActive: false,
     },
 ]
